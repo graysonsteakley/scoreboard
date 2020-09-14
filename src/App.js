@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components'
 import 'bootstrap/dist/css/bootstrap.css';
-import {ScoreBoard} from './components/ScoreBoard'
+import ScoreBoard from './components/ScoreBoard'
 
 const Header = styled.h1`
 
@@ -10,6 +10,7 @@ const Header = styled.h1`
   font-weight: bolder;
   letter-spacing: 2.5;
   text-align: center;
+  font-family: 'Hanalei', cursive!important; 
 
 
 `;
