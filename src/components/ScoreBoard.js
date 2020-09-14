@@ -42,7 +42,11 @@ export default class ScoreBoard extends Component {
             
             this.setState((prevState)=>{
                 return{
-                    items: prevState.items.concat(newItem)
+                    items: prevState.items.concat(newItem).sort(
+                        (a, b) => {
+                            return b.score - a.score;
+                        }
+                    )
                 };
             });
         }
