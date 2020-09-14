@@ -62,13 +62,51 @@ li{
 
 }
 
-.btn{
-  background-color: rgb(210, 31, 84);
-  font-size: 3rem;
-  padding: 2rem;
-  margin: 1rem;
+@media screen and (min-width: 1480px) {
+  html {
+    font-size: 62.5%;
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 57.5%;
+  }
+}
+
+
+@media screen and (max-width: 960px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 45%;
+  }
+}
+
+*:focus {
+  outline: none!important;
+}
+
+.btn-main{
+  background-color: rgb(196, 20, 72);
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 1rem;
+  transition: all 0.2s!important;
+  border-radius: 2rem;
+}
+
+.btn-main:hover{
+  background-color: rgb(238, 56, 111)!important;
+}
+
+.btn-main:focus{
+  background-color: rgb(189, 26, 75)!important;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
   text-align: center;
@@ -105,6 +143,12 @@ h1{
     font-family: 'Hanalei', cursive;
 }
 
+li{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 /* GITHUB ANIMATIONS */
   .fancy-link{
@@ -112,7 +156,7 @@ h1{
     display: block;
     font-family: sans-serif;
     text-decoration: none;
-    color: #333;
+    color: #999;
     border: 2px solid #333;
     letter-spacing: 2px;
     text-align: center;

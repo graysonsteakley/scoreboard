@@ -68,14 +68,14 @@ function App() {
       <div className ="background">
 
       </div>
-      <div className="container-fluid">
+      <div style={{height:'auto'}} className="container-fluid">
         <a href="/">
         <Header>{addText('S C O R E S')}</Header>
         </a>
         <ScoreBoard/>
         <AuthoredBy>
           Hand-Crafted by Grayson Steakley
-          <a className = "fancy-link" href="#"><span style={{fontSize: '2rem'}}>&nbsp;Github&nbsp;</span></a>
+          <a className = "fancy-link" href="https://github.com/graysonsteakley/scoreboard" target="_blank"><span style={{fontSize: '2rem'}}>&nbsp;Github&nbsp;</span></a>
          
         </AuthoredBy>
 

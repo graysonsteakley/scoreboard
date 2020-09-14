@@ -37,9 +37,11 @@ export default class ScoreItems extends Component {
         return (
             <TextContainer>
             <ul className="the-List mr-4">
+                <li><div className="mb-3 mr-5" style={{display:"inline-block", textAlign: 'center', fontSize: "5rem"}}>NAMES</div></li>
                 {nameItems}
             </ul>
             <ul className="the-List mr-4">
+            <li><div className="mb-3 ml-5" style={{display:"inline-block", textAlign: 'center', fontSize: "5rem"}}>SCORES</div></li>
                 {scoreItems}
             </ul>
             </TextContainer>

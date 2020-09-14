@@ -34,7 +34,7 @@ export default class ScoreBoard extends Component {
     addItem(e){
         e.preventDefault();
 
-        if(this._nameElement.value !== "" && this._scoreElement.value !== ""  && !isNaN(this._scoreElement.value)){
+        if(this._nameElement.value !== "" && this._scoreElement.value !== "" && this._nameElement.value.length < 20 && this._scoreElement.value.length < 10  && !isNaN(this._scoreElement.value)){
 
             var newItem = {
                 name: this._nameElement.value,
@@ -44,7 +44,7 @@ export default class ScoreBoard extends Component {
             
             //ADDS THE NEW SCORE OBJECT AND SORTS THE NEW STATE
             this.setState((prevState)=>{
-                if(this.state.items.length < 9){                
+                if(this.state.items.length < 7){                
                     return{
                         items: prevState.items.concat(newItem).sort(
                             (a, b) => {
@@ -89,7 +89,7 @@ export default class ScoreBoard extends Component {
                     className="mt-2"
                     ref={(a) => this._scoreElement = a}
                     placeholder="Enter Score:"/>
-                    <button type="submit" style={{color:'lavender', fontSize: '3rem', background: 'red'}} className="btn">
+                    <button type="submit" style={{color:'lavender', fontSize: '3rem', background: 'red'}} className="btn-main">
                         Enter
                     </button>
 
