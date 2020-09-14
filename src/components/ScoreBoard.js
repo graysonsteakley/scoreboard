@@ -12,6 +12,11 @@ const ScoreBoardContainer = styled.div`
     align-items: center;
 
 
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
 `;
 
 

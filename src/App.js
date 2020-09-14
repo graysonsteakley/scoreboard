@@ -12,6 +12,12 @@ const Header = styled.h1`
   text-align: center;
   font-family: 'Hanalei', cursive; 
 
+  @media screen and (max-width: 800px) {
+    html {
+      font-size: 45%;
+    }
+  }
+
 
 `;
 
@@ -29,6 +35,11 @@ const AuthoredBy = styled.p`
   align-items: center;
   justify-content: center;
 
+  @media screen and (max-width: 800px) {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
 
 `;
 
@@ -68,7 +79,7 @@ function App() {
       <div className ="background">
 
       </div>
-      <div style={{height:'auto'}} className="container-fluid">
+      <div style={{height:'auto'}} className="container-fluid mediaLarge">
         <a href="/">
         <Header>{addText('S C O R E S')}</Header>
         </a>

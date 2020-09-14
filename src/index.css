@@ -87,6 +87,10 @@ li{
   }
 }
 
+.mediaLarge{
+  
+}
+
 *:focus {
   outline: none!important;
 }
@@ -98,6 +102,7 @@ li{
   margin: 1rem;
   transition: all 0.2s!important;
   border-radius: 2rem;
+
 }
 
 .btn-main:hover{
@@ -137,7 +142,24 @@ form{
   align-items: center;
   flex-direction: column;
   width: 100%;
+  
+ 
 }
+
+
+@media screen and (max-width: 800px) {
+  form {
+    margin-bottom: 2rem;
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .btn-main{
+    display: none!important;
+  }
+}
+
 
 h1{
     font-family: 'Hanalei', cursive;
