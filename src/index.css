@@ -5,12 +5,32 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+
+}
+
+
+.background{
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -3;
+  width: 100vw;
+  height: 100vh;
+  background: url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+    /* Add the blur effect */
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 
 
 *,
@@ -20,6 +40,7 @@ code {
     font-size: 62.5%;
     margin: 0;
     padding: 0;
+    font-family: 'Hanalei', cursive!important;
 }
 
 
@@ -42,4 +63,8 @@ code {
 
 html{
   box-sizing: border-box;
+}
+
+.light-text{
+  color: rgb(243, 76, 126)!important;
 }
