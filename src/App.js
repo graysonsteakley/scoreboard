@@ -13,11 +13,15 @@ const Header = styled.h1`
   font-family: 'Hanalei', cursive; 
 
   @media screen and (max-width: 800px) {
-    html {
-      font-size: 45%;
-    }
+
+    font-size: 15rem;
   }
 
+  
+  @media screen and (max-width: 600px) {
+
+    font-size: 10rem;
+  }
 
 `;
 
