@@ -10,7 +10,24 @@ const Header = styled.h1`
   font-weight: bolder;
   letter-spacing: 2.5;
   text-align: center;
-  font-family: 'Hanalei', cursive!important; 
+  font-family: 'Hanalei', cursive; 
+
+
+`;
+
+const AuthoredBy = styled.p`
+
+  position: absolute;
+  top: 85vh;
+  right: 40vw;
+  color: lightgrey;
+  font-size: 2rem;
+  letter-spacing: 2!important;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
 
 `;
@@ -33,11 +50,11 @@ function App() {
     const Scores = ScoreString.map((letter, ind) => {
         return (
             
-            <span onMouseOver={(e, ind)=>handleMouseOver(e, ind) }
+            <p onMouseOver={(e, ind)=>handleMouseOver(e, ind) }
             onMouseLeave={(e, ind)=>handleMouseOver(e, ind) }
-            className = {`${HoverState ? `main-text hover${ind}`: `light-text text-up-anim2 hover${ind}`}`} style={{display: 'inline', cursor: 'pointer'}} key={ind} >
+            className = {`${HoverState ? `light-text hover${ind}`: `hover${ind}`}`} style={{display: 'inline-block', cursor: 'pointer'}} key={ind} >
                 {letter}&nbsp;
-            </span >
+            </p >
            
         );
     });
@@ -52,8 +69,15 @@ function App() {
 
       </div>
       <div className="container-fluid">
+        <a href="/">
         <Header>{addText('S C O R E S')}</Header>
+        </a>
         <ScoreBoard/>
+        <AuthoredBy>
+          Hand-Crafted by Grayson Steakley
+          <a className = "fancy-link" href="#"><span style={{fontSize: '2rem'}}>&nbsp;Github&nbsp;</span></a>
+         
+        </AuthoredBy>
 
       </div>
     </>
